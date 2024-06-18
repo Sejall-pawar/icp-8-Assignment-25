@@ -5,7 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        
+        let age = parseInt(prompt("Please enter your age:"));
+
+        if (age < 0) {
+            console.log("Invalid age!");
+        } else if (age < 13) {
+            console.log("You are a child.");
+        } else if (age < 20) {
+            console.log("You are a teenager.");
+        } else if (age < 65) {
+            console.log("You are an adult.");
+        } else {
+            console.log("You are a senior.");
+        }
     </script>
 </head>
 <body>
